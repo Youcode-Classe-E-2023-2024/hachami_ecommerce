@@ -13,5 +13,10 @@ class Category extends Model
         'imgUrl',
     ];
     protected $table='category';
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
     use HasFactory;
 }

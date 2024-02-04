@@ -4,12 +4,12 @@
         <div class="relative">
             <img src="{{asset('images/products/' . $product->imgUrl)}}" alt="{{$product->id}}" class="w-full">
             <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center
-                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition cursor-pointer">
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition ">
 
             </div>
         </div>
         <div class="pt-4 pb-3 px-4">
-            <a href="#">
+            <a href="/product/{{$product->id}}">
                 <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">{{$product->title}}</h4>
             </a>
             <div class="flex items-baseline mb-1 space-x-2">
